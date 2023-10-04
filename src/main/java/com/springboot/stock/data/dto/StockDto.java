@@ -18,7 +18,9 @@ public class StockDto {
 
     private Long stId;
 
-    private Date stDay;
+    private Date startDay;
+
+    private Date endDay;
 
     private int stStart;
 
@@ -34,18 +36,5 @@ public class StockDto {
 
     private Long stMoney;
 
-    public Stock search(){
-        return Stock.builder()
-                .stId(stId)
-                .stDay(stDay)
-                .stStart(stStart)
-                .stHigh(stHigh)
-                .stLow(stLow)
-                .stClose(stClose)
-                .stBefore(stBefore)
-                .stTrade(stTrade)
-                .stMoney(stMoney)
-        .build();
-    }
 
 }
