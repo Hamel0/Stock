@@ -4,6 +4,7 @@ import com.springboot.stock.data.entity.Stock;
 import lombok.*;
 import org.springframework.stereotype.Component;
 
+
 import java.sql.Date;
 
 @Getter
@@ -36,7 +37,15 @@ public class StockDto {
     public Stock search(){
         return Stock.builder()
                 .stId(stId)
-                .build();
+                .stDay(stDay)
+                .stStart(stStart)
+                .stHigh(stHigh)
+                .stLow(stLow)
+                .stClose(stClose)
+                .stBefore(stBefore)
+                .stTrade(stTrade)
+                .stMoney(stMoney)
+        .build();
     }
 
 }
